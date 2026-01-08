@@ -1894,30 +1894,25 @@ int main()
 
 int main()
 {
-	int h, f;
-	scanf("%d %d", &h, &f);
+	int n;
+	scanf("%d", &n);
 	
-	int c = 0;
-	int r = 0;
-	int res = 0;
+	int cnt = 0;
+	double res = 0.0;
+	int i = 1;
+	int sign = 1;
 	
-    for (r = 0; r<= h; r++) {
-    	c = h - r;
-    	if (4*r + 2* c == f) {
-    		res = 1;
-    		break;
-		}
+	for (cnt = 0; cnt < 2*n; cnt++) {
+		res += sign * 1.0 / i;
+		i += 2;
+		sign = -sign;
 	}
-    
-	if (res == 1) {
-		printf ("%d %d", c, r);
-	}else {
-		printf("Error");
-	}
+	
+	printf("%lf", res*4.0);
 	
 	return 0;
-	
 }
+
 
 ```
 

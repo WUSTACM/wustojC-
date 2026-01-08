@@ -371,7 +371,7 @@ int main ()
 	str[i] = '\0';
 	
 	printf("String:%s\n", str);	
-	printf("number=%d", str);
+	printf("number=%d", num);
 	
 	return 0;
 	
@@ -2332,7 +2332,7 @@ int gcd(int m, int n)  //辗转相除法
 }
 ```
 
-### 设计递归函数计算两个整数的最大公约数
+### 设计递归函数计算n！
 
 ``` c++
 int fac(int n)
